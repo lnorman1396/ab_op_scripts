@@ -156,12 +156,12 @@ streamlit-aggrid==0.2.3
 streamlit-authenticator==0.1.5
 streamlit-card==0.0.3
 streamlit-ext==0.1.4
-streamlit-modal==0.0.5
+
 streamlit-nested-layout==0.1.1
-streamlit-on-Hover-tabs==1.0.1
+
 streamlit-option-menu==0.3.2
-streamlit-stepper-bar==0.0.8
-streamlit-toggle-switch==1.0.2
+
+
 styleframe==4.1
 svg.path==6.2
 tenacity==8.0.1
