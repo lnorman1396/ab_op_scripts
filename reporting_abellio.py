@@ -19,6 +19,7 @@ import collections
 import xlsxwriter
 
 import toml
+import secrets
 
 
 
@@ -31,7 +32,7 @@ cwd = os.getcwd()
 #TODO: may need to pass each key through as individual variable from toml into ServiceAccountCredentials
 #credentials = ServiceAccountCredentials.from_json_keyfile_name(cwd+'/Cred.json', scope)
 
-secrets = toml.load('secrets_abellio.toml')
+
 
 
 #Dictionary mapping domain-substring to client value (will be used in df mapping later on)
@@ -49,7 +50,7 @@ clients_dict = {
 st.subheader('Abellio - Reports')
 
 #TODO: Save this to a secrets.toml file 
-api_secrets_dict= secrets['api_secrets_dict']
+api_secrets_dict= st.secrets['api_secrets_dict']
 
 #function to split URL into three substrings
 def process_URL(schedule_URL):
